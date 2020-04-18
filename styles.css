@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+.screen {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: inset 1px 1px 7px 3px rgba(0, 0, 0, 0.336);
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid rgba(128, 128, 128, 0.192);
+  margin-right: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.screen-header.header {
+  height: 88px;
+}
+
+.header-menu {
+  height: 44px;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.header-chat {
+  margin-top: 11px;
+}
+
+.header-chat h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 17px;
+  margin: 0;
+}
+
+.main-room.room {
+  padding: 16px;
+}
+
+.room {
+  border-top: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.room:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.room-image,
+.room-description {
+  float: left;
+}
+
+.room-title,
+.room-current-message {
+  font-size: 13px;
+}
+
+.nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 2px solid rgba(128, 128, 128, 0.295);
+}
+
+.nav-list {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  padding-bottom: 13px;
+}
+
+.nav-item i {
+  font-size: 16px;
+}
+
+.nav-item:nth-child(3) {
+  color: #fff;
+  padding: 13.5px 28.5px;
+  background: linear-gradient(193.11deg, #ff00d6 8.58%, #ff4d00 91.42%);
+  border-radius: 35%;
+  z-index: 5;
+}
+
+.nav-bottom-bar {
+  margin: 5px auto;
+  width: 150px;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+}
